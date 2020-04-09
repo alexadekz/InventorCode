@@ -49,6 +49,9 @@ const beepUrl = require('../../../sounds/audioAlert.mp3');
 const unsavedChangesDotUrl = require('../../../images/unsaved-changes-dot.svg');
 const rightArrowUrl = require('../../../images/right-arrow.svg');
 const leftArrowUrl = require('../../../images/left-arrow.svg');
+const preferencesUrl = require('../../../images/new/settings.svg');
+const pencilUrl = require('../../../images/new/pencil.svg');
+const playUrl = require('../../../images/new/play-button.svg');
 
 const IS_TAB_INDENT = false;
 const INDENTATION_AMOUNT = 2;
@@ -335,6 +338,21 @@ class Editor extends React.Component {
               isUserOwner={this.props.isUserOwner}
             />
           </div> 
+          <div className="edit-name">
+            Defesa Terrestre Final copy
+            <button
+              aria-label="preferences"
+              className="icon_settings"
+            >
+              <InlineSVG src={pencilUrl} alt="Editar" />
+            </button>
+          </div>
+          <button
+            aria-label="preferences"
+            className="icon_settings"
+          >
+            <InlineSVG src={preferencesUrl} alt="Preferences" />
+          </button>
         </header>
         <div ref={(element) => { this.codemirrorContainer = element; }} className={editorHolderClass} >
         </div>
