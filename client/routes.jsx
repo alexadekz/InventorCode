@@ -9,6 +9,7 @@ import ResetPasswordView from './modules/User/pages/ResetPasswordView';
 import EmailVerificationView from './modules/User/pages/EmailVerificationView';
 import NewPasswordView from './modules/User/pages/NewPasswordView';
 import AccountView from './modules/User/pages/AccountView';
+import Passos from './modules/IDE/components/Passos';
 // import SketchListView from './modules/Sketch/pages/SketchListView';
 import { getUser } from './modules/User/actions';
 import { stopSketch } from './modules/IDE/actions/ide';
@@ -45,6 +46,7 @@ const routes = store => (
     <Route path="/personagens" component={IDEView} />
     <Route path="/sons" component={IDEView} />
     <Route path="/feedback" component={IDEView} />
+    <Route path="/passos" component={Passos} />
   </Route>
 );
 

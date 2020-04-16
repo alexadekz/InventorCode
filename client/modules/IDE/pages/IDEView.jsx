@@ -38,6 +38,7 @@ import Feedback from '../components/Feedback';
 import Fundos from '../components/Fundos';
 import Sons from '../components/Sons';
 import Personagens from '../components/Personagens';
+import Passos from '../components/Passos';
 import InlineSVG from 'react-inlinesvg';
 
 const giftUrl = require('../../../images/new/gift.svg');
@@ -438,6 +439,11 @@ class IDEView extends React.Component {
           >
             <Personagens previousPath={this.props.ide.previousPath} className="Fundos__teste" />
           </Overlay>
+        }
+        { this.props.location.pathname === '/passos' &&
+          
+            <Passos previousPath={this.props.ide.previousPath} className="Fundos__teste" />
+         
         }
                 { this.props.location.pathname === '/sons' &&
           <Overlay

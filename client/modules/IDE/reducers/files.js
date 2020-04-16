@@ -1,16 +1,12 @@
 import objectID from 'bson-objectid';
 import * as ActionTypes from '../../../constants';
 
-const defaultSketch = `//coloque suas variaveis abaixo
 
 
-function setup() {
-  
-}
+import tablet from '../../../images/tablet.svg';   //aparentemente isso só finciona com SVG [???]; Mudar tablet.svg para o arquivo que vocês usam
+//no defaultHTML chamamos esse arquivo usando {tablet}. Isso é possivel apenas usando ` ao invés do uso de aspas convencional
 
-function draw() {
-  
-}`;
+const defaultSketch = ``;
 
 const defaultHTML =
 `<!DOCTYPE html>
@@ -31,9 +27,10 @@ const defaultHTML =
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8" />
   </head>
+  
   <body>
     <div id="conteiner">
-    <img src="https://codigosinventor.s3-sa-east-1.amazonaws.com/t7.png" class="img" width="600"> 
+    <img src="${tablet}" class="img" width="600"> 
     <script src="sketch.js"></script>
     </div>
   </body>
