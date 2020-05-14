@@ -18,6 +18,7 @@ const bibliotecaURL = require('../images/new/book.svg');
 const arquivoURL = require('../images/new/burger.svg');
 const ajudaURL = require('../images/new/help.svg');
 const logoUrl = require('../images/new/logo.svg');
+const shareUrl = require('../images/new/share.svg');
 
 const __process = (typeof global !== 'undefined' ? global : window).process;
 
@@ -586,6 +587,9 @@ class Nav extends React.PureComponent {
               </li>
               
             </ul>
+          </li>
+          <li className="nav__item">
+            <InlineSVG src={shareUrl} alt="p5.js share" className="svg__share" />
           </li>
         </ul>
         { __process.env.LOGIN_ENABLED && !this.props.user.authenticated &&
