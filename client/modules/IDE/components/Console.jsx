@@ -85,14 +85,14 @@ class Console extends React.Component {
             <InlineSVG src={consoleUrl} />
           </h2>
           <div className="dflex">
-            <div className="error_inf">
+            <div className="error_inf dn">
               <span>(1) Bug Encontrado</span>
               <span>(2) Chamados</span>
-              <span>(1) Bug Encontrado</span>
+              <span>Apagar</span>
             </div>
             <div className="preview-console__header-buttons">
               <button className="preview-console__clear" onClick={this.props.clearConsole} aria-label="clear console">
-                Clear
+                Apagar
               </button>
               <button
                 className="preview-console__collapse"

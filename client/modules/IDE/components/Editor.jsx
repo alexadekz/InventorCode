@@ -49,7 +49,7 @@ const beepUrl = require('../../../sounds/audioAlert.mp3');
 const unsavedChangesDotUrl = require('../../../images/unsaved-changes-dot.svg');
 const rightArrowUrl = require('../../../images/right-arrow.svg');
 const leftArrowUrl = require('../../../images/left-arrow.svg');
-const preferencesUrl = require('../../../images/new/settings.svg');
+const preferencesUrl = require('../../../images/new2/Icone_configuração.svg');
 const pencilUrl = require('../../../images/new/pencil.svg');
 const playUrl = require('../../../images/new/play-button.svg');
 
@@ -311,6 +311,9 @@ class Editor extends React.Component {
         role="main"
         className={editorSectionClass}
       >
+        <div className="saved">
+          Saved: 2 minutes ago
+        </div>
         <header className="editor__header">
           <button
             aria-label="collapse file navigation"
@@ -322,12 +325,12 @@ class Editor extends React.Component {
            
           <button
             aria-label="expand file navigation"
-            className="sidebar__expand"
+            className="sidebar__expand dn"
             onClick={this.props.expandSidebar}
           >
             <InlineSVG src={rightArrowUrl} />
           </button>
-          <div className="editor__file-name">
+          <div className="editor__file-name dn">
             <span>
               {this.props.file.name}
               {this.props.unsavedChanges ? <InlineSVG src={unsavedChangesDotUrl} /> : null}
@@ -339,7 +342,7 @@ class Editor extends React.Component {
             />
           </div> 
           <div className="edit-name">
-            Defesa Terrestre Final copy
+            Nome do jogo
             <button
               aria-label="preferences"
               className="icon_settings"
